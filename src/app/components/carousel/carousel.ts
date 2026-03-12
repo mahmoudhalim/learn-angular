@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   templateUrl: './carousel.html',
   styleUrl: './carousel.css',
 })
-export class Carousel {}
+export class Carousel {
+  scrollToSlide(id: string) {
+  const slide = document.getElementById(id);
+  if (slide) {
+    slide.parentElement?.scrollTo({
+      left: slide.offsetLeft,
+      behavior: 'smooth'
+    });
+  }
+}
+}

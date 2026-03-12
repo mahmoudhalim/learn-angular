@@ -2,29 +2,29 @@
   <div id="slide1" class="carousel-item relative w-full overflow-hidden h-full">
     <img src="assets/images/butter-croissant.png" class="w-full h-full object-contain" />
     <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide4" class="btn btn-circle">❮</a>
-      <a href="#slide2" class="btn btn-circle">❯</a>
+      <button (click)="scrollToSlide('slide4')" class="btn btn-circle">❮</button>
+      <button (click)="scrollToSlide('slide2')" class="btn btn-circle">❯</button>
     </div>
   </div>
   <div id="slide2" class="carousel-item relative w-full h-full">
     <img src="/assets/images/blueberry-scone.png" class="w-full h-full object-contain" />
     <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide1" class="btn btn-circle">❮</a>
-      <a href="#slide3" class="btn btn-circle">❯</a>
+      <button (click)="scrollToSlide('slide1')" class="btn btn-circle">❮</button>
+      <button (click)="scrollToSlide('slide3')" class="btn btn-circle">❯</button>
     </div>
   </div>
   <div id="slide3" class="carousel-item relative w-full h-full">
     <img src="/assets/images/cinnamon-latte.png" class="w-full h-full object-contain" />
     <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide2" class="btn btn-circle">❮</a>
-      <a href="#slide4" class="btn btn-circle">❯</a>
+      <button (click)="scrollToSlide('slide2')" class="btn btn-circle">❮</button>
+      <button (click)="scrollToSlide('slide4')" class="btn btn-circle">❯</button>
     </div>
   </div>
   <div id="slide4" class="carousel-item relative w-full h-full">
     <img src="/assets/images/chocolate-muffin.png" class="w-full h-full object-contain" />
     <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide3" class="btn btn-circle">❮</a>
-      <a href="#slide1" class="btn btn-circle">❯</a>
+      <button (click)="scrollToSlide('slide3')" class="btn btn-circle">❮</button>
+      <button (click)="scrollToSlide('slide1')" class="btn btn-circle">❯</button>
     </div>
   </div>
 </div>
