@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-product-card',
@@ -7,5 +7,4 @@ import { Component, Input } from '@angular/core';
   styleUrl: './product-card.css',
 })
 export class ProductCard {
- @Input() product: any
 }

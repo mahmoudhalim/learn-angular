@@ -1,17 +1,17 @@
 <div class="card bg-base-100 h-full shadow-sm">
   <figure class="h-70 overflow-hidden">
-    <img class="w-full h-full object-cover" [src]="product.image" [alt]="product.title" />
+    <ng-content select="img"></ng-content>
   </figure>
   <div class="card-body">
     <div class="flex flex-row justify-between items-center">
-      <h2 class="card-title mr-2">{{ product.name }}</h2>
-      <div class="badge badge-soft" [class]="product.inStock ? 'badge-success' : 'badge-error'">
-        {{ product.inStock ? 'in Stock' : 'Out of Stock' }}
-      </div>
+      <ng-content select="h2"></ng-content>
+      <ng-content select="span"></ng-content>
     </div>
-    <div class="text-md font-bold" [class]="product.basePrice > 100 ? 'text-error' : 'text-success'">L.E {{ product.basePrice }}</div>
+
+    <ng-content select="p"></ng-content>
+
     <div class="card-actions flex flex-row justify-end mx-auto">
-      <button class="btn btn-accent" [disabled]="!product.inStock">Add to Cart</button>
+      <ng-content select="button"></ng-content>
     </div>
   </div>
 </div>
